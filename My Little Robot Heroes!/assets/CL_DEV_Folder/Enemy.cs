@@ -19,6 +19,8 @@ public class Enemy : MonoBehaviour
 
     public GameObject CurrentNode;
 
+    public float AllowedDistance;
+
 
     // Update is called once per frame
     void Update()
@@ -33,9 +35,11 @@ public class Enemy : MonoBehaviour
 
     private void Move()
     {
-        Vector3 nextPos = this.transform.position - CurrentNode.transform.position;
-        transform.position -= nextPos.normalized * Time.deltaTime * Speed;
-        if (nextPos.magnitude < 0.5)
+        Vector2 nextPos = this.transform.position - CurrentNode.transform.position;
+        transform.position -= (Vector3)(nextPos.normalized * Time.deltaTime * Speed);
+        transform.position = new Vector3(transform.position.x, transform.position.y, 0);
+        Debug.Log(nextPos.magnitude);
+        if (nextPos.magnitude < AllowedDistance)
         {
             this.CurrentNode = CurrentNode.GetComponent<Path>().NextNode;
         }
