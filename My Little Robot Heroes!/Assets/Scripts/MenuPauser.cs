@@ -27,8 +27,6 @@ public class MenuPauser : MonoBehaviour
 
     public void TogglePause()
     {
-        Debug.Log("Toggliong pause");
-
         m_IsPaused = !m_IsPaused;
 
         //Send an on paused message to all gameobjects and monobehaviors
