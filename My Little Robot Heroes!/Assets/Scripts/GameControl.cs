@@ -7,7 +7,10 @@ public class GameControl : MonoBehaviour
 
     public static GameControl gameControl;
 
+
     private int charge;
+    private int health;
+
 
     // Start is called before the first frame update
     void Start()
@@ -61,6 +64,25 @@ public class GameControl : MonoBehaviour
     public bool CompareCharge(int chargeComp)
     {
         return this.charge >= chargeComp;
+    }
+
+    public void DecreaseHealth(int dec)
+    {
+        this.health -= dec;
+    }
+
+    public int Gethealth()
+    {
+        return this.health;
+    }
+
+    private void CheckHealth()
+    {
+        if(this.health <= 0)
+        {
+            int i = 0;
+            int w = i / 0;
+        }
     }
 
 }
