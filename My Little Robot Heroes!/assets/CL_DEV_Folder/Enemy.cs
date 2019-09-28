@@ -17,7 +17,7 @@ public class Enemy : MonoBehaviour
 
     private int nextUpdate = 1;
 
-    public GameObject CurrentNode;
+    public GameObject CurrentNode = new GameObject();
 
 
     // Update is called once per frame
