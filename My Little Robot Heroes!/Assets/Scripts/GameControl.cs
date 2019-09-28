@@ -10,6 +10,10 @@ public class GameControl : MonoBehaviour
 
     private int charge;
     private int health;
+    [Range(1, int.MaxValue)]
+    public int startHealth = 20;
+    [Range(0, int.MaxValue)]
+    public int startCharge = 100;
 
 
     // Start is called before the first frame update
@@ -26,13 +30,19 @@ public class GameControl : MonoBehaviour
             gameControl = this.gameObject.GetComponent<GameControl>();
             DontDestroyOnLoad(this.gameObject);
         }
-
+        Reset();
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void Reset()
+    {
+        this.health = this.startHealth;
+        this.charge = this.startCharge;
     }
 
     public int GetCharge()
