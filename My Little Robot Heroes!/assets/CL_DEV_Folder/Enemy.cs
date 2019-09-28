@@ -68,7 +68,7 @@ public class Enemy : MonoBehaviour
     void dealDamage()
     {
         GameObject core = GameObject.FindGameObjectWithTag("core");
-        core.Ge
+        //core.Ge
     }
 
 
