@@ -21,7 +21,7 @@ public class GameControl : MonoBehaviour
     {
 
         //Make this a singleton
-        if(this.gameObject != null)
+        if(gameControl != null)
         {
             //Destroy(this.gameObject);
         }
