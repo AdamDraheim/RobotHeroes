@@ -57,9 +57,10 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
-        GameObject core = GameObject.Find("Core");
+        GameObject core = GameObject.FindGameObjectWithTag("Core");
         GameControl gc = core.GetComponent<GameControl>();
         gc.IncreaseCharge((int)Charge);
+        Destroy(this.gameObject);
     }
 
     private void OnCollisionEnter(Collision collision)

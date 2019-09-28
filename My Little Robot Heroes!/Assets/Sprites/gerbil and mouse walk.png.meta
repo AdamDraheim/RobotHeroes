@@ -1,7 +1,61 @@
 fileFormatVersion: 2
 guid: 031e235059a021a47b6dbf0e0ead8eee
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 583061939142748604
+    second: gerbil and mouse walk_0
+  - first:
+      213: -7809591558880344234
+    second: gerbil and mouse walk_1
+  - first:
+      213: 709430413718917607
+    second: gerbil and mouse walk_2
+  - first:
+      213: -5637511808204492970
+    second: gerbil and mouse walk_3
+  - first:
+      213: -7712785601267160481
+    second: gerbil and mouse walk_4
+  - first:
+      213: 3307550822902442796
+    second: gerbil and mouse walk_5
+  - first:
+      213: -2952233467434444695
+    second: gerbil and mouse walk_6
+  - first:
+      213: -8328429095100701635
+    second: gerbil and mouse walk_7
+  - first:
+      213: -1572651473204602046
+    second: gerbil and mouse walk_8
+  - first:
+      213: 6262529999644741705
+    second: gerbil and mouse walk_9
+  - first:
+      213: 2748787835391418759
+    second: gerbil and mouse walk_10
+  - first:
+      213: -6696163854087548041
+    second: gerbil and mouse walk_11
+  - first:
+      213: 4409040165656946811
+    second: gerbil and mouse walk_12
+  - first:
+      213: -1909972442821292913
+    second: gerbil and mouse walk_13
+  - first:
+      213: 7386541161444284765
+    second: gerbil and mouse walk_14
+  - first:
+      213: -5309702887903907799
+    second: gerbil and mouse walk_15
+  - first:
+      213: 27627426635721073
+    second: gerbil and mouse walk_16
+  - first:
+      213: -4883862497636967249
+    second: gerbil and mouse walk_17
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +94,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,9 +123,398 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: gerbil and mouse walk_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 826
+        width: 228
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7fa5e9c763c8e746b56deef5c669ddb
+      internalID: 583061939142748604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gerbil and mouse walk_1
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 823
+        width: 227
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebd1bf22dfb99284bb02fc90a747513f
+      internalID: -7809591558880344234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gerbil and mouse walk_2
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 823
+        width: 227
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2944f89c15d4d2344b9aab70dc108da9
+      internalID: 709430413718917607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gerbil and mouse walk_3
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 828
+        width: 200
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d21316f145b5c6d4a850d9ad8c13290d
+      internalID: -5637511808204492970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gerbil and mouse walk_4
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 831
+        width: 203
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0097017c6e7bbc547975d4998b39bb14
+      internalID: -7712785601267160481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gerbil and mouse walk_5
+      rect:
+        serializedVersion: 2
+        x: 1518
+        y: 827
+        width: 206
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9173c49c8317b9449f4260f27a3126d
+      internalID: 3307550822902442796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gerbil and mouse walk_6
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 504
+        width: 239
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0aef9fbd4c301747bba9cdf3086d0e9
+      internalID: -2952233467434444695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gerbil and mouse walk_7
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 494
+        width: 248
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6ee903b607f7e74cbf63693194da1f3
+      internalID: -8328429095100701635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gerbil and mouse walk_8
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 498
+        width: 239
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df62ec8de304534a91d63b2b73ae6bf
+      internalID: -1572651473204602046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gerbil and mouse walk_9
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 494
+        width: 196
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3ed04984324a7a4aa9d22dd29aa2511
+      internalID: 6262529999644741705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gerbil and mouse walk_10
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 510
+        width: 196
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 288571535eee37e479b8d91ed32a4132
+      internalID: 2748787835391418759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gerbil and mouse walk_11
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 510
+        width: 198
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddff4818a475ad44aa700a027aa8d74f
+      internalID: -6696163854087548041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gerbil and mouse walk_12
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 172
+        width: 226
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86eb2394fc080d24c8c21d845b58bc1e
+      internalID: 4409040165656946811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gerbil and mouse walk_13
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 167
+        width: 227
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8872eb5d55d9924998a3fe13c798ef8
+      internalID: -1909972442821292913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gerbil and mouse walk_14
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 164
+        width: 227
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0800d9d720b6cb4786586e55ce05830
+      internalID: 7386541161444284765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gerbil and mouse walk_15
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 164
+        width: 202
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a2f04a7050f4064da44026ba4a39820
+      internalID: -5309702887903907799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gerbil and mouse walk_16
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 168
+        width: 198
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2702dff70fb93e345b44ff08a1b72efc
+      internalID: 27627426635721073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gerbil and mouse walk_17
+      rect:
+        serializedVersion: 2
+        x: 1534
+        y: 168
+        width: 200
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a1f2b8915809ba4dbb36f7b8a41d22d
+      internalID: -4883862497636967249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

@@ -23,7 +23,7 @@ public class GameControl : MonoBehaviour
         //Make this a singleton
         if(this.gameObject != null)
         {
-            Destroy(this.gameObject);
+            //Destroy(this.gameObject);
         }
         else
         {

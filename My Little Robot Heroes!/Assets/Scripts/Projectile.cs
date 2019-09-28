@@ -25,19 +25,20 @@ public class Projectile : MonoBehaviour
     private void FixedUpdate()
     {
         this.transform.Translate(CalcTrajectory(Target) * speed);
-
+        this.transform.LookAt(Target.transform);
 
         //this.transform. = CalcTrajectory(Target);
     }
 
     private Vector3 CalcTrajectory(GameObject Target)
     {
-        Vector3 output = new Vector2();
+        Vector3 output = new Vector3();
 
         output.x = Target.transform.position.x - this.transform.position.x;
         output.y = Target.transform.position.y - this.transform.position.y;
+        output.z = 0;
 
-        if(output.x * output.x + output.y * output.y <= 1)
+        if(Mathf.Sqrt(output.x * output.x + output.y * output.y) <= .5)
         {
             Target.SendMessage("takeDamage", damage);
             Destroy(this.gameObject);
