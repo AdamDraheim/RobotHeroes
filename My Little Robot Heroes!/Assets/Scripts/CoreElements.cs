@@ -17,7 +17,7 @@ public class CoreElements : MonoBehaviour
         {
             Destroy(coll.gameObject);
             GameControl.gameControl.DecreaseHealth(1);
-            Debug.log(GameControl.gameControl.Gethealth());
+            Debug.Log(GameControl.gameControl.Gethealth());
         }
     }
 
