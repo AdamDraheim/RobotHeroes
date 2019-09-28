@@ -8,6 +8,8 @@ public class Projectile : MonoBehaviour
 
     public float speed = 0.2f;
 
+    public int damage = 1;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +25,8 @@ public class Projectile : MonoBehaviour
     private void FixedUpdate()
     {
         this.transform.Translate(CalcTrajectory(Target) * speed);
+
+
         //this.transform. = CalcTrajectory(Target);
     }
 
@@ -32,6 +36,13 @@ public class Projectile : MonoBehaviour
 
         output.x = Target.transform.position.x - this.transform.position.x;
         output.y = Target.transform.position.y - this.transform.position.y;
+
+        if(output.x * output.x + output.y * output.y <= 1)
+        {
+            Target.SendMessage("takeDamage", damage);
+            Destroy(this.gameObject);
+        }
+
         output.Normalize();
 
         return output;
