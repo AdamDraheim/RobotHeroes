@@ -10,6 +10,7 @@ public class MenuManager : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene(mapToLoad);
+        GameControl.gameControl.Reset();
     }
 
     public void QuitGame()

@@ -7,7 +7,14 @@ public class GameControl : MonoBehaviour
 
     public static GameControl gameControl;
 
+
     private int charge;
+    private int health;
+    [Range(1, int.MaxValue)]
+    public int startHealth = 20;
+    [Range(0, int.MaxValue)]
+    public int startCharge = 100;
+
 
     // Start is called before the first frame update
     void Start()
@@ -23,13 +30,19 @@ public class GameControl : MonoBehaviour
             gameControl = this.gameObject.GetComponent<GameControl>();
             DontDestroyOnLoad(this.gameObject);
         }
-
+        Reset();
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void Reset()
+    {
+        this.health = this.startHealth;
+        this.charge = this.startCharge;
     }
 
     public int GetCharge()
@@ -61,6 +74,25 @@ public class GameControl : MonoBehaviour
     public bool CompareCharge(int chargeComp)
     {
         return this.charge >= chargeComp;
+    }
+
+    public void DecreaseHealth(int dec)
+    {
+        this.health -= dec;
+    }
+
+    public int Gethealth()
+    {
+        return this.health;
+    }
+
+    private void CheckHealth()
+    {
+        if(this.health <= 0)
+        {
+            int i = 0;
+            int w = i / 0;
+        }
     }
 
 }
