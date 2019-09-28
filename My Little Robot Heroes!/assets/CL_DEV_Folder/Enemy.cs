@@ -17,19 +17,26 @@ public class Enemy : MonoBehaviour
 
     private int nextUpdate = 1;
 
-    public GameObject CurrentNode = new GameObject();
+    public GameObject CurrentNode;
 
     public float AllowedDistance;
 
     // Update is called once per frame
     void Update()
     {
+
         if (Time.time >= nextUpdate)
         {
             nextUpdate = Mathf.FloorToInt(Time.time) + 1;
-            AddCharge();
         }
+
+        if(Health <= 0)
+        {
+            Die();
+        }
+
         Move();
+
     }
 
     private void Move()
@@ -37,11 +44,10 @@ public class Enemy : MonoBehaviour
         Vector2 nextPos = this.transform.position - CurrentNode.transform.position;
         transform.position -= (Vector3)(nextPos.normalized * Time.deltaTime * Speed);
         transform.position = new Vector3(transform.position.x, transform.position.y, 0);
-
-        Debug.Log(nextPos.magnitude);
         if (nextPos.magnitude < AllowedDistance)
         {
             this.CurrentNode = CurrentNode.GetComponent<Path>().NextNode;
+            Charge += 10;
         }
     }
 
@@ -50,20 +56,15 @@ public class Enemy : MonoBehaviour
         Charge += 1f;
     }
 
-    void takeDamage(int damage)
+    public void takeDamage(float damage)
     {
-        Health -= damage;
-        if (Health <= 0)
-        {
-            Die();
-        }
+        this.Health -= damage;
+        Debug.Log(damage + " " + Health);
     }
 
     void Die()
     {
-        GameObject core = GameObject.FindGameObjectWithTag("Core");
-        GameControl gc = core.GetComponent<GameControl>();
-        gc.IncreaseCharge((int)Charge);
+        GameControl.gameControl.IncreaseCharge((int)Charge);
         Destroy(this.gameObject);
     }
 

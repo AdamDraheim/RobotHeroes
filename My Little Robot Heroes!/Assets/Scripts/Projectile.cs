@@ -24,23 +24,30 @@ public class Projectile : MonoBehaviour
 
     private void FixedUpdate()
     {
-        this.transform.Translate(CalcTrajectory(Target) * speed);
-        this.transform.LookAt(Target.transform);
+        this.transform.Translate(CalcTrajectory(Target) * speed * Time.deltaTime);
+        //this.transform.LookAt(Target.transform);
 
         //this.transform. = CalcTrajectory(Target);
     }
 
     private Vector3 CalcTrajectory(GameObject Target)
     {
+
+        if(Target == null)
+        {
+            Destroy(this.gameObject);
+            return new Vector3(0, 0, 0);
+        }
+
         Vector3 output = new Vector3();
 
         output.x = Target.transform.position.x - this.transform.position.x;
         output.y = Target.transform.position.y - this.transform.position.y;
         output.z = 0;
 
-        if(Mathf.Sqrt(output.x * output.x + output.y * output.y) <= .5)
+        if(Mathf.Sqrt(output.x * output.x + output.y * output.y) <= 0.5)
         {
-            Target.SendMessage("takeDamage", damage);
+            Target.GetComponent<Enemy>().takeDamage(damage);
             Destroy(this.gameObject);
         }
 

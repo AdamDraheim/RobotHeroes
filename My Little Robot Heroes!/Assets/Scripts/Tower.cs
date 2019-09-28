@@ -35,12 +35,13 @@ public class Tower : MonoBehaviour
         }
 
         //set the object as immovable once it's been set down
-        if(Input.GetMouseButtonUp(0))
+        if(Input.GetMouseButtonDown(0))
         {
-            set = true;
+            //Instantiate(obj, pos);
+            //set = true;
         }
 
-        menu();
+        //menu();
     }
 
     //Creates an upgrades? menu at the tower position
