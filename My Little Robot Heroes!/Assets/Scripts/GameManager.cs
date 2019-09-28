@@ -36,18 +36,22 @@ public class GameManager : MonoBehaviour
     {
         //init values
         waveNumber = 1;
+        waveTime = 10f;
         spawnLocationTransform = spawnLocation.GetComponent<Transform>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (timer > waveTime && startNextWave == true)
+        if (startNextWave == true)
         {
-            timer = 0f;
-            StartNextWave();
+            if (timer > waveTime)
+            {
+                timer = 0f;
+                StartNextWave();
+            }
+            timer += Time.deltaTime;
         }
-        timer += Time.deltaTime;
     }
 
     /// <summary>
