@@ -38,6 +38,7 @@ public class GameManager : MonoBehaviour
         waveNumber = 1;
         waveTime = 10f;
         spawnLocationTransform = spawnLocation.GetComponent<Transform>();
+        startNextWave = true;
     }
 
     // Update is called once per frame
@@ -52,6 +53,11 @@ public class GameManager : MonoBehaviour
             }
             timer += Time.deltaTime;
         }
+
+        if (startNextWave == false)
+        {
+            timer = 0f;
+        }
     }
 
     /// <summary>
@@ -61,5 +67,6 @@ public class GameManager : MonoBehaviour
     {
         startNextWave = false;
         Instantiate(enemySpawnerPrefab, spawnLocationTransform);
+        Debug.Log("Wave"+ waveNumber + "started");
     }
 }

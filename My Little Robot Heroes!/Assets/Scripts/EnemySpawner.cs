@@ -34,6 +34,7 @@ public class EnemySpawner : MonoBehaviour
         else
         {
             //current wave is over, destroys the spawner
+            Debug.Log("Wave" + GameManager.instance.waveNumber + "over");
             GameManager.instance.waveNumber++;
             GameManager.instance.startNextWave = true;
             Destroy(gameObject);
@@ -45,6 +46,6 @@ public class EnemySpawner : MonoBehaviour
     {
         Instantiate(enemyPrefab);
         enemiesForCurrentWave--;
-        Debug.Log("spawn enemy");
+        Debug.Log("spawn enemy" + enemiesForCurrentWave);
     }
 }
